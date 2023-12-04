@@ -1,0 +1,174 @@
+
+header {
+    background-color: #f3f3f3; 
+    padding: 10px 0; 
+    text-align: center; 
+    margin: 0;
+}
+
+header ul {
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden; 
+}
+
+header li {
+    display: inline; 
+    margin-right: 20px; 
+}
+
+header li a {
+    text-decoration: none; 
+    color: #333333; 
+    font-size: 16px; 
+    font-weight: bold; 
+    padding: 8px 10px; 
+    border-radius: 4px; 
+    transition: background-color 0.3s; 
+}
+
+header li a:hover {
+    background-color: #ddd; 
+}
+
+
+.introduction {
+    margin: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    font-family:  'Arial Narrow', Arial, sans-serif;
+}
+
+.artists {
+    margin: 0;
+    height: auto;
+    background-color: antiquewhite;
+}
+  
+.artist-info {
+    overflow: hidden;
+}
+
+h1{
+    font-family: 'Dancing Script', cursive; 
+    font-size: 48px; 
+    color: blueviolet;
+    text-align: center;
+}
+p {
+    font-family: 'Georgia', serif; 
+    line-height: 1.6; 
+    color: #333333; 
+    margin-bottom: 15px; 
+    text-align: justify; 
+}
+
+
+
+
+.artists{
+    column-count: 2;
+
+}
+
+.artist img {
+    float: left;
+    margin-right: 15px;
+    width: 100px; 
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.timeline {
+    position: relative;
+    margin: 50px 0;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #ddd;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+}
+
+.timeline-content {
+    padding: 20px;
+    background: #f9f9f9;
+    position: relative;
+    border-radius: 6px;
+    
+}
+
+
+
+
+
+.timeline-content::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.timeline-item:nth-child(odd) .timeline-content::after {
+    top: 50%;
+    right: -15px;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent black transparent;
+}
+
+.timeline-item:nth-child(even) .timeline-content::after {
+    top: 50%;
+    left: -15px;
+    border-width: 10px 0 10px 15px;
+    border-color: transparent transparent transparent red;
+}
+
+
+
+footer {
+    background-color: #f2f2f2; 
+    color: #333; 
+    text-align: center; 
+    padding: 20px 0; 
+    bottom: 0; 
+    width: 100%; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
+  }
+  
+  footer p {
+    margin: 0; 
+    font-size: 16px; 
+    text-align: center;
+  }
